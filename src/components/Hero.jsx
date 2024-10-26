@@ -70,133 +70,61 @@ function Section2() {
           <div className="row g-3 px-3 px-sm-0">
             {/* Card 1 */}
             <div className="col-12 col-md-4">
-              <a className="card card-bg-custom text-decoration-none">
-                <div className="card-body d-flex align-items-center p-2">
-                  {/* Circular Icon */}
-                  <div className="card-icon-style ms-1 d-flex justify-content-center align-items-center me-3">
-                    <i className="bi-moon fs-4 text-light"></i>
-                  </div>
-
-                  {/* Card Title */}
-                  <h5 className="card-title mb-0 text-truncate">Card 1</h5>
-                </div>
-              </a>
+              <Section2Card title={"Card 1"} icon={"bi-moon"} />
             </div>
             {/* Card 2 */}
             <div className="col-12 col-md-4">
               <a className="card card-bg-custom  text-decoration-none">
-                <div className="card-body d-flex align-items-center p-2">
-                  {/* Circular Icon */}
-                  <div className="card-icon-style ms-1 d-flex justify-content-center align-items-center me-3">
-                    <i className="bi-moon fs-4 text-light"></i>
-                  </div>
-
-                  {/* Card Title */}
-                  <h5 className="card-title mb-0 text-truncate">Card 2</h5>
-                </div>
+                <Section2Card title={"Card 2"} icon={"bi-moon"} />
               </a>
             </div>
             {/* Card 3 */}
             <div className="col-12 col-md-4">
-              <a className="card card-bg-custom   text-decoration-none">
-                <div className="card-body d-flex align-items-center p-2">
-                  {/* Circular Icon */}
-                  <div className="card-icon-style ms-1 d-flex justify-content-center align-items-center me-3">
-                    <i className="bi-moon fs-4 text-light"></i>
-                  </div>
-
-                  {/* Card Title */}
-                  <h5 className="card-title mb-0 text-truncate">Card 3</h5>
-                </div>
-              </a>
+              <Section2Card title={"Card 3"} icon={"bi-moon"} />
             </div>
             {/* Card 4 */}
             <div className="col-6 col-md-4 d-none d-md-block">
-              <a className="card card-bg-custom   text-decoration-none">
-                <div className="card-body d-flex align-items-center p-2">
-                  {/* Circular Icon */}
-                  <div className="card-icon-style ms-1 d-flex justify-content-center align-items-center me-3">
-                    <i className="bi-moon fs-4 text-light"></i>
-                  </div>
-
-                  {/* Card Title */}
-                  <h5 className="card-title mb-0 text-truncate">Card 4</h5>
-                </div>
-              </a>
+              <Section2Card title={"Card 4"} icon={"bi-moon"} />
             </div>
             {/* Card 5 */}
             <div className="col-6 col-md-4 d-none d-md-block">
-              <a className="card card-bg-custom   text-decoration-none">
-                <div className="card-body d-flex align-items-center p-2">
-                  {/* Circular Icon */}
-                  <div className="card-icon-style ms-1 d-flex justify-content-center align-items-center me-3">
-                    <i className="bi-moon fs-4 text-light"></i>
-                  </div>
-
-                  {/* Card Title */}
-                  <h5 className="card-title mb-0 text-truncate">Card 5</h5>
-                </div>
-              </a>
+              <Section2Card title={"Card 5"} icon={"bi-moon"} />
             </div>
             {/* Card 6 */}
             <div className="col-6 col-md-4 d-none d-md-block">
-              <a className="card card-bg-custom   text-decoration-none">
-                <div className="card-body d-flex align-items-center p-2">
-                  {/* Circular Icon */}
-                  <div className="card-icon-style ms-1 d-flex justify-content-center align-items-center me-3">
-                    <i className="bi-moon fs-4 text-light"></i>
-                  </div>
-
-                  {/* Card Title */}
-                  <h5 className="card-title mb-0 text-truncate">Card 6</h5>
-                </div>
-              </a>
+              <Section2Card title={"Card 6"} icon={"bi-moon"} />
             </div>
             {/* Card 7 */}
             <div className="col-6 col-md-4 d-none d-md-block">
-              <a className="card card-bg-custom   text-decoration-none">
-                <div className="card-body d-flex align-items-center p-2">
-                  {/* Circular Icon */}
-                  <div className="card-icon-style ms-1 d-flex justify-content-center align-items-center me-3">
-                    <i className="bi-moon fs-4 text-light"></i>
-                  </div>
-
-                  {/* Card Title */}
-                  <h5 className="card-title mb-0 text-truncate">Card 7</h5>
-                </div>
-              </a>
+              <Section2Card title={"Card 7"} icon={"bi-moon"} />
             </div>
             {/* Card 8 */}
             <div className="col-6 col-md-4 d-none d-md-block">
-              <a className="card card-bg-custom   text-decoration-none">
-                <div className="card-body d-flex align-items-center p-2">
-                  {/* Circular Icon */}
-                  <div className="card-icon-style ms-1 d-flex justify-content-center align-items-center me-3">
-                    <i className="bi-moon fs-4 text-light"></i>
-                  </div>
-
-                  {/* Card Title */}
-                  <h5 className="card-title mb-0 text-truncate">Card 8</h5>
-                </div>
-              </a>
+              <Section2Card title={"Card 8"} icon={"bi-moon"} />
             </div>
             {/* Card 9 */}
             <div className="col-12 col-md-4">
-              <a className="card card-bg-custom   text-decoration-none">
-                <div className="card-body d-flex align-items-center p-2">
-                  {/* Circular Icon */}
-                  <div className="ms-1 d-flex justify-content-center align-items-center me-3 card-icon-style">
-                    <i className="bi-moon fs-4 text-light"></i>
-                  </div>
-
-                  {/* Card Title */}
-                  <h5 className="card-title mb-0 text-truncate">Card 9</h5>
-                </div>
-              </a>
+              <Section2Card title={"View all topics"} icon={"bi-moon"} />
             </div>
           </div>
         </div>
-      </div>
+      </di
+    </>
+  );
+}
+function Section2Card({ title, icon }) {
+  return (
+    <>
+      <a className="card card-bg-custom text-decoration-none">
+        <div className="card-body d-flex align-items-center p-2">
+          {/* Circular Icon */}
+          <div className="card-icon-style ms-1 d-flex justify-content-center align-items-center me-3">
+            <i className={`${icon} fs-4 text-light`}></i>
+          </div>
+          {/* Card Title */}
+          <h5 className="card-title mb-0 text-truncate">{title}</h5>
+        </div>
+      </a>
     </>
   );
 }
@@ -248,7 +176,7 @@ function Section3Card({ title, subtext, icon }) {
         <div className="card p-4 h-100 text-start card-bg-custom">
           <div className="d-flex align-items-center mb-4">
             <div className="rounded-circle d-flex justify-content-center align-items-center card-icon-style">
-            <i className={`${icon} fs-4 text-white`}></i>
+              <i className={`${icon} fs-4 text-white`}></i>
             </div>
             <h5 className="ms-3 fw-bold mb-0">{title}</h5>
           </div>
