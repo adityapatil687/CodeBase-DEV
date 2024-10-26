@@ -20,9 +20,7 @@ function Section2() {
             </div>
             {/* Card 2 */}
             <div className="col-12 col-md-4">
-              <a className="card card-bg-custom  text-decoration-none">
-                <Section2Card title={"Card 2"} icon={"bi-moon"} />
-              </a>
+              <Section2Card title={"Card 2"} icon={"bi-moon"} />
             </div>
             {/* Card 3 */}
             <div className="col-12 col-md-4">
