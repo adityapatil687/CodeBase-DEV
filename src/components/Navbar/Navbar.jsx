@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./styles/Navbar.css";
 
 function Navbar() {
@@ -49,17 +50,17 @@ function Navbar() {
 function NavbarBrand() {
   return (
     <>
-      <a className="navbar-brand" href="#">
+      <Link className="navbar-brand" to="/">
         <img
           src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
           alt="Bootstrap"
           width={40}
         />
-      </a>
-      <a className="navbar-brand text-light mt-1">
+      </Link>
+      <Link to="/" className="navbar-brand text-light mt-1">
         CodeBase
         <span className="rounded px-1 custom-title-border">DEV</span>
-      </a>
+      </Link>
     </>
   );
 }
@@ -69,31 +70,31 @@ function NavbarLinks() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0 py-1">
           <li className="nav-item mx-2">
-            <a
+            <Link
               className="nav-link active text-light nav-link-custom rounded"
               aria-current="page"
-              href="#"
+              to="/topics"
             >
               Topics
-            </a>
+            </Link>
           </li>
           <li className="nav-item mx-2">
-            <a
+            <Link
               className="nav-link active text-light nav-link-custom rounded"
               aria-current="page"
-              href="#"
+              to="/docs"
             >
               Docs
-            </a>
+            </Link>
           </li>
           <li className="nav-item mx-2">
-            <a
+            <Link
               className="nav-link active text-light nav-link-custom rounded"
               aria-current="page"
-              href="#"
+              to="/about"
             >
               About
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -134,17 +135,17 @@ function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle }) {
       >
         <div className="offcanvas-header">
           <div className="d-flex align-items-center">
-            <a className="navbar-brand">
+            <Link to="/" className="navbar-brand">
               <img
                 src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
                 alt="Bootstrap"
                 width={40}
               />
-            </a>
-            <a className="navbar-brand text-light mt-2 ms-2 h4">
+            </Link>
+            <Link to="/" className="navbar-brand text-light mt-2 ms-2 h4">
               CodeBase
               <span className="rounded px-1 custom-title-border">DEV</span>
-            </a>
+            </Link>
           </div>
           <button
             type="button"
@@ -155,28 +156,28 @@ function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle }) {
         <div className="offcanvas-body">
           <ul className="navbar-nav flex-column">
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link nav-link-custom text-light rounded"
-                href="#"
+                to="/topics"
               >
                 <span className="ms-3">Topics</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link nav-link-custom text-light rounded"
-                href="#"
+                to="/docs"
               >
                 <span className="ms-3">Docs</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link nav-link-custom text-light rounded"
-                href="#"
+                to="/about"
               >
                 <span className="ms-3">About</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
