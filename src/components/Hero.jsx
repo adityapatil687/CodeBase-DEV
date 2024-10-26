@@ -108,13 +108,13 @@ function Section2() {
             </div>
           </div>
         </div>
-      </di
+      </div>
     </>
   );
 }
 function Section2Card({ title, icon }) {
   return (
-    <>
+    <div>
       <a className="card card-bg-custom text-decoration-none">
         <div className="card-body d-flex align-items-center p-2">
           {/* Circular Icon */}
@@ -125,7 +125,7 @@ function Section2Card({ title, icon }) {
           <h5 className="card-title mb-0 text-truncate">{title}</h5>
         </div>
       </a>
-    </>
+    </div>
   );
 }
 
