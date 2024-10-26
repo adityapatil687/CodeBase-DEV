@@ -210,54 +210,49 @@ function Section3() {
 
         <div className="row mt-5 g-4">
           {/* Card 1 */}
-          <div className="col-12 col-md-12 col-lg-4">
-            <div className="card p-4 h-100 text-start card-bg-custom">
-              <div className="d-flex align-items-center mb-4">
-                <div className="rounded-circle d-flex justify-content-center align-items-center card-icon-style">
-                  <i className="bi-pen fs-4 text-white"></i>
-                </div>
-                <h5 className="ms-3 fw-bold mb-0">Learn by Doing</h5>
-              </div>
-              <p className="text-body-secondary">
-                We focus on simplicity. Programming tutorials and examples are
-                written in simple, understandable language for beginners.
-              </p>
-            </div>
-          </div>
+          <Section3Card
+            title={"Programming made easy"}
+            subtext={
+              "We focus on simplicity. Programming tutorials and examples written in simple, understandable language for beginners."
+            }
+            icon={"bi bi-pen"}
+          />
 
           {/* Card 2 */}
-          <div className="col-12 col-md-12 col-lg-4">
-            <div className="card p-4 h-100 text-start card-bg-custom">
-              <div className="d-flex align-items-center mb-4">
-                <div className="rounded-circle d-flex justify-content-center align-items-center card-icon-style">
-                  <i className="bi-shield-check fs-4 text-white"></i>
-                </div>
-                <h5 className="ms-3 fw-bold mb-0">Learn by Doing</h5>
-              </div>
-              <p className="text-body-secondary">
-                A dedicated group of experts continually works to create
-                programming resources that are accurate and easier to
-                understand.
-              </p>
-            </div>
-          </div>
+          <Section3Card
+            title={"Content You Can Trust"}
+            subtext={
+              "A dedicated group of experts continually working to create programming resources that is accurate and easier to understand."
+            }
+            icon={"bi bi-shield-check"}
+          />
 
           {/* Card 3 */}
-          <div className="col-12 col-md-12 col-lg-4">
-            <div className="card p-4 h-100 text-start card-bg-custom">
-              <div className="d-flex align-items-center mb-4">
-                <div className="rounded-circle d-flex justify-content-center align-items-center card-icon-style">
-                  <i className="bi-code-slash fs-4 text-white"></i>
-                </div>
-                <h5 className="ms-3 fw-bold mb-0">Learn by Doing</h5>
-              </div>
-              <p className="text-body-secondary">
-                The only way to learn to program is by writing code. We provide
-                a lot of complete examples so that you can run and edit code on
-                your own.
-              </p>
+          <Section3Card
+            title={"Learn by Doing"}
+            subtext={
+              "The only way to learn to program is by writing code. We provide a lot of complete examples so that run and edit code on your own."
+            }
+            icon={"bi bi-code"}
+          />
+        </div>
+      </div>
+    </>
+  );
+}
+
+function Section3Card({ title, subtext, icon }) {
+  return (
+    <>
+      <div className="col-12 col-md-12 col-lg-4">
+        <div className="card p-4 h-100 text-start card-bg-custom">
+          <div className="d-flex align-items-center mb-4">
+            <div className="rounded-circle d-flex justify-content-center align-items-center card-icon-style">
+            <i className={`${icon} fs-4 text-white`}></i>
             </div>
+            <h5 className="ms-3 fw-bold mb-0">{title}</h5>
           </div>
+          <p className="text-body-secondary">{subtext}</p>
         </div>
       </div>
     </>
