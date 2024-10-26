@@ -1,0 +1,62 @@
+.navbar{
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.navbar,
+.offcanvas {
+  background-color: #1f2836 !important; /* Force Bootstrap color */
+  color: #fff;
+}
+
+a.nav-link-custom {
+  line-height: 20px;
+  font-size: medium;
+  font-weight: 600;
+}
+a.nav-link-custom:hover {
+  background-color: #5738dfc9; /* Background color on hover */
+  transition: background-color 0.1s ease-in;
+}
+
+.btn {
+  width: 40px; /* Set the width */
+  height: 40px; /* Set the height */
+  display: flex; /* Use flex to center the icon */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  border: none;
+  background-color: #363f4d;
+}
+
+.btn:hover {
+  background-color: #5738dfc9; /* Purple background on hover */
+}
+
+.btn i {
+  color: white; /* Icon color */
+  transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+.btn:hover i {
+  color: white; /* Change icon color on hover */
+}
+
+.offcanvas {
+  transition: transform 0.5s ease; /* Smooth transition for entering/exiting */
+  transform: translateX(-100%); /* Start off-screen */
+  max-width: 80vw; /* Limit max width to 80% of the viewport width */
+  padding: 1rem; /* Add padding */
+}
+
+.offcanvas.show {
+  transform: translateX(0); /* Slide in */
+  transition: transform 0.5s ease;
+}
+
+.custom-title-border:hover {
+  border-right: 2px solid #5738dfc9 !important;
+  border-bottom: 2px solid #5738dfc9 !important; /* Force border style */
+}

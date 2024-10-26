@@ -1,0 +1,43 @@
+/* Navbar and Offcanvas Background */
+.navbar, .offcanvas {
+    background-color: #1f2836 !important;
+    color: #fff;
+  }
+  
+  /* Custom Nav Link Styling */
+  a.nav-link-custom {
+    position: relative;
+    line-height: 20px;
+    font-size: medium;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff; /* White text */
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Ensure no background change on hover */
+  a.nav-link-custom:hover {
+    background-color: transparent;
+    color: #fff; /* Keep text white */
+  }
+  
+  /* Bottom Border Effect on Hover and Active State (Expand from Center) */
+  a.nav-link-custom::after {
+    content: "";
+    position: absolute;
+    bottom: -8px; /* Align with the bottom edge */
+    left: 50%; /* Start from the center */
+    width: 0%; /* Initially 0 width */
+    height: 2px; /* Thickness of the underline */
+    background-color: #5738dfc9; /* Purple-like color */
+    transform: translateX(-50%); /* Center align */
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+  }
+  
+  /* Hover and Active States: Expand underline from center outward */
+  a.nav-link-custom:hover::after,
+  a.nav-link-custom.active::after {
+    width: 100%; /* Full width on hover/active */
+  }
+  

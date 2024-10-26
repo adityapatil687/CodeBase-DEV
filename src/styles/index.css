@@ -1,0 +1,9 @@
+/* Dark Theme */
+body[data-bs-theme="dark"] {
+    background-color: #19202b !important;
+}
+
+/* Light Theme */
+body[data-bs-theme="light"] {
+    background-color: #FEFFFE !important;
+}
