@@ -1,0 +1,14 @@
+.dropdown-item {
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #7b61ff; /* Background color on hover */
+    color: white; /* Text color on hover */
+  }
+  
+  .dropdown-item.active {
+    background-color: #7b61ff; /* Background color for the selected item */
+    color: white; /* Text color for the selected item */
+  }
+  

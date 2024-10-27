@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-
+import "./styles/topics.css";
+import { Link } from "react-router-dom";
 function Topics() {
   const topicsList = [
     {
@@ -87,22 +88,27 @@ function Topics() {
           {filteredLanguages.map((lang, index) => (
             <div className="col-md-3" key={index}>
               <div className="card">
-                <img
-                  src={lang.image}
-                  className="card-img-top"
-                  alt={lang.name}
-                  style={{
-                    height: "200px",
-                    objectFit: "cover",
-                    borderRadius: "10px 10px 0 0",
-                  }}
-                />
-                <div className="card-body">
-                  <h5 className="card-title">{lang.name}</h5>
-                  <p className="card-text">
-                    {lang.description} {/* Use description from the array */}
-                  </p>
-                </div>
+                <Link
+                  to={`/topics/${lang.name.toLowerCase()}`}
+                  className="text-decoration-none text-light"
+                >
+                  <img
+                    src={lang.image}
+                    className="card-img-top"
+                    alt={lang.name}
+                    style={{
+                      height: "200px",
+                      objectFit: "cover",
+                      borderRadius: "10px 10px 0 0",
+                    }}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">{lang.name}</h5>
+                    <p className="card-text">
+                      {lang.description} {/* Use description from the array */}
+                    </p>
+                  </div>
+                </Link>
               </div>
             </div>
           ))}
