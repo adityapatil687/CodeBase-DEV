@@ -28,11 +28,8 @@ function Navbar() {
     <>
       <nav className="navbar shadow-sm navbar-expand-lg bg-dark">
         <div className="container-fluid">
-          <div className="d-inline-flex mb-1 px-2">
-            {/* Toggle Button: Only show on small screens */}
-            <OffcanvasButton handleOffcanvasToggle={handleOffcanvasToggle} />
-            <NavbarBrand />
-          </div>
+          <OffcanvasButton handleOffcanvasToggle={handleOffcanvasToggle} />
+          <NavbarBrand />
           <NavbarLinks />
           <ThemeButton handleToggle={handleToggle} isDarkMode={isDarkMode} />
         </div>
@@ -47,17 +44,29 @@ function Navbar() {
   );
 }
 
+function OffcanvasButton({ handleOffcanvasToggle }) {
+  return (
+    <>
+      <div className="sideMenuBtn d-lg-none">
+        {/* Hide on large screens */}
+        <button className="btn mt-1" onClick={handleOffcanvasToggle}>
+          <i className="bi bi-list fs-4"></i>
+        </button>
+      </div>
+    </>
+  );
+}
+
 function NavbarBrand() {
   return (
     <>
-      <Link className="navbar-brand" to="/">
+      <Link to="/" className="navbar-brand text-light mt-1 me-auto ms-2">
         <img
           src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
           alt="Bootstrap"
+          className="me-2"
           width={40}
         />
-      </Link>
-      <Link to="/" className="navbar-brand text-light mt-1">
         CodeBase
         <span className="rounded px-1 custom-title-border">DEV</span>
       </Link>
@@ -101,23 +110,12 @@ function NavbarLinks() {
     </>
   );
 }
-function OffcanvasButton({ handleOffcanvasToggle }) {
-  return (
-    <>
-      <div className="sideMenuBtn d-lg-none">
-        {/* Hide on large screens */}
-        <button className="btn mt-1 me-4" onClick={handleOffcanvasToggle}>
-          <i className="bi bi-list fs-4"></i>
-        </button>
-      </div>
-    </>
-  );
-}
+
 function ThemeButton({ handleToggle, isDarkMode }) {
   return (
     <button
       onClick={handleToggle}
-      className="btn rounded text-light me-2 rounded-circle"
+      className="btn rounded text-light me-0 rounded-circle"
     >
       <i className={`bi ${isDarkMode ? "bi-moon" : "bi-sun"} h5 mt-2`}></i>
     </button>

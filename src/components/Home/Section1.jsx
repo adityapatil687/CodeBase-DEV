@@ -11,7 +11,7 @@ function Section1() {
             <br />
             for Free
           </div>
-          <p className="fs-5 mt-4 text-body-secondary pe-4">
+          <p className="fs-5 mt-4 text-body-secondary pe-0 pe-sm-4">
             Learn to program with our beginner-friendly tutorials and examples.
             Read tutorials, try examples, write code, and learn to program.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
