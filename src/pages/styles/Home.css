@@ -7,23 +7,22 @@
   height: 100vh; /* Full viewport height */
 }
 
-.card-bg-custom {
+.home-card-bg-custom {
   height: 65px;
   transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
 
 /* Zoom effect on hover */
-.card-bg-custom:hover {
+.home-card-bg-custom:hover {
   transform: scale(1.05); /* Scale up to 105% of original size */
 }
 
 /* Card Icon Style */
 .card-icon-style {
   background-color: #7b61ff; 
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
-  min-height: 40px;
+  
+  min-width: 45px;
+  min-height: 45px;
   border-radius: 50%; /* Makes it a circle */
   display: flex;
   justify-content: center;
@@ -31,41 +30,41 @@
 }
 
 /* Card Styling for Dark Theme */
-[data-bs-theme="dark"] .card-bg-custom {
+[data-bs-theme="dark"] .home-card-bg-custom {
   background-color: #283447 !important;
   color: #fff;
   transition: background-color 0.3s ease;
 }
 
-[data-bs-theme="dark"] .card-bg-custom:hover {
+[data-bs-theme="dark"] .home-card-bg-custom:hover {
   background-color: #5738dfc9 !important; /* Slightly lighter on hover */
 }
 
 /* Card Styling for Light Theme */
-[data-bs-theme="light"] .card-bg-custom {
+[data-bs-theme="light"] .home-card-bg-custom {
   background-color: #fefefe !important; /* Light background */
   color: #0f0f0f; /* Dark text for readability */
   transition: background-color 0.3s ease;
 }
 
-[data-bs-theme="light"] .card-bg-custom:hover {
+[data-bs-theme="light"] .home-card-bg-custom:hover {
   background-color: #e1e1e1 !important; /* Light hover effect */
   color: #5738dfc9; /* Change text color on hover for contrast */
 }
 
 /* Optional: Improve text visibility for light theme */
-[data-bs-theme="light"] .card-bg-custom h5,
-[data-bs-theme="light"] .card-bg-custom p {
+[data-bs-theme="light"] .home-card-bg-custom h5,
+[data-bs-theme="light"] .home-card-bg-custom p {
   color: #0f0f0f; /* Ensure text is dark for readability */
 }
 
 /* Optional: Links and buttons inside cards */
-[data-bs-theme="light"] .card-bg-custom a,
-[data-bs-theme="light"] .card-bg-custom button {
+[data-bs-theme="light"] .home-card-bg-custom a,
+[data-bs-theme="light"] .home-card-bg-custom button {
   color: #5738dfc9; /* Consistent link color */
 }
 
-[data-bs-theme="light"] .card-bg-custom a:hover,
-[data-bs-theme="light"] .card-bg-custom button:hover {
+[data-bs-theme="light"] .home-card-bg-custom a:hover,
+[data-bs-theme="light"] .home-card-bg-custom button:hover {
   color: #fff; /* Change link/button text to white on hover for visibility */
 }

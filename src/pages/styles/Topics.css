@@ -1,0 +1,65 @@
+/* Hover Effect for Cards */
+.topic-card-bg-custom:hover {
+  transform: scale(1.02); /* Smooth scaling effect */
+}
+
+/* Card Styling for Dark Theme */
+[data-bs-theme="dark"] .topic-card-bg-custom {
+  background-color: #1c1f2b !important; /* Dark slate background */
+  color: #e0e6ed; /* Soft light text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-bs-theme="dark"] .topic-card-bg-custom:hover {
+  background-color: #2a2e3e !important; /* Slightly lighter slate on hover */
+  color: #a2c8fa; /* Light blue text on hover */
+}
+
+/* Heading and Paragraph Text for Better Readability */
+[data-bs-theme="dark"] .topic-card-bg-custom h5,
+[data-bs-theme="dark"] .topic-card-bg-custom p {
+  color: #d1d9e6; /* Slightly muted light text for comfort */
+}
+
+/* Links and Buttons Inside Cards */
+[data-bs-theme="dark"] .topic-card-bg-custom a,
+[data-bs-theme="dark"] .topic-card-bg-custom button {
+  color: #6fa8dc; /* Calm blue links and buttons */
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme="dark"] .topic-card-bg-custom a:hover,
+[data-bs-theme="dark"] .topic-card-bg-custom button:hover {
+  color: #e0e6ed; /* Light text color on hover */
+}
+
+/* Card Styling for Light Theme */
+[data-bs-theme="light"] .topic-card-bg-custom {
+  background-color: #ffffff !important; /* Pure white background */
+  color: #333333 !important; /* Dark gray for text (better than black) */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure Text Inside the Card is Readable */
+[data-bs-theme="light"] .topic-card-bg-custom h5,
+[data-bs-theme="light"] .topic-card-bg-custom p {
+  color: #333333 !important; /* Dark gray text */
+}
+
+/* Links and Buttons Inside Cards */
+[data-bs-theme="light"] .topic-card-bg-custom a,
+[data-bs-theme="light"] .topic-card-bg-custom button {
+  color: #0056b3 !important; /* Primary blue links/buttons */
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme="light"] .topic-card-bg-custom a:hover,
+[data-bs-theme="light"] .topic-card-bg-custom button:hover {
+  color: #ffffff !important; /* White text on hover */
+  background-color: #f7f7f7 !important; /* Blue background for contrast */
+}
+
+/* Hover Effect */
+[data-bs-theme="light"] .topic-card-bg-custom:hover {
+  background-color: #f1f1f1 !important; /* Subtle gray hover effect */
+}

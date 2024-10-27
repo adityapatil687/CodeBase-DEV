@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./styles/Topics.css"
 function Topics() {
   const topicsList = [
     {
@@ -47,21 +48,20 @@ function Topics() {
   return (
     <>
       <div className="container py-3">
-        <div className="text-center">
-          
-        </div>
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <h1>Topics</h1>
+          <div className="pe-2">
+            <h1>Topics</h1>
+          </div>
 
-          <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center ms-auto">
             {/* Search Bar */}
             <input
               type="text"
               placeholder="Search topics..."
-              className="form-control w-auto"
+              className="form-control"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              style={{ maxWidth: "250px" }} // Limit width
+              style={{ minWidth: "160px" }}
             />
             {/* Category Selector */}
             <select
@@ -80,8 +80,8 @@ function Topics() {
 
         <div className="row g-4">
           {filteredLanguages.map((lang, index) => (
-            <div className="col-md-3 " key={index}>
-              <div className="card topic-card-bg-custom ">
+            <div className="col-3" key={index}>
+              <div className="topic-card-bg-custom card rounded">
                 <Link
                   to={`/topics/${lang.name.toLowerCase()}`}
                   className="text-decoration-none link-light"
@@ -90,15 +90,11 @@ function Topics() {
                     src={lang.image}
                     className="card-img-top"
                     alt={lang.name}
-                    style={{
-                      height: "200px",
-                      objectFit: "cover",
-                      borderRadius: "10px 10px 0 0",
-                    }}
+                    
                   />
                   <div className="card-body">
                     <h5 className="card-title">{lang.name}</h5>
-                    <p className="card-text">
+                    <p className="card-text ">
                       {lang.description} {/* Use description from the array */}
                     </p>
                   </div>

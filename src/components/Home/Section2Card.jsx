@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 function Section2Card({ title, icon, to }) {
   return (
     <div className="">
-      <NavLink to={to} className="card card-bg-custom text-decoration-none">
+      <NavLink to={to} className="home-card-bg-custom card text-decoration-none">
         <div className="card-body d-flex align-items-center py-1">
           {/* Circular Icon */}
           <div className="card-icon-style ms-1 d-flex justify-content-center align-items-center me-3">

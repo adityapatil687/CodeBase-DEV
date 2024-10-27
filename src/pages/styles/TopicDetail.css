@@ -1,8 +1,46 @@
-.sideContent{
-    height: 100vh;
-    overflow-y: hidden;
+/* Side Content Styles */
+.sideContent {
+  height: 100vh;
 }
-  
+
+[data-bs-theme="dark"].accordion-body{
+  background-color: #19202b;
+}
+
+[data-bs-theme="light"].accordion-body{
+  background-color: #FEFFFE;
+}
+
+/* Optional: Remove the shadow effect on focus */
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Light Theme Styles */
+[data-bs-theme="light"] .accordion-button {
+  background-color: #FEFFFE; /* Light background */
+  color: #212529; /* Dark text */
+}
+
+[data-bs-theme="light"] .accordion-button:not(.collapsed) {
+  background-color: #FEFFFE; /* Light gray when expanded */
+  color: #212529; /* Dark text */
+  border-color: #dee2e6; /* Light border */
+}
+
+/* Dark Theme Styles */
+[data-bs-theme="dark"] .accordion-button {
+  background-color: #19202b; /* Dark background */
+  color: #fff; /* White text */
+}
+
+[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+  background-color: #19202b; /* Same dark background */
+  color: #fff; /* Ensure text color remains consistent */
+  border-color: rgb(36, 36, 36); /* Dark border */
+}
+
 /* Floating Button Styling */
 .floating-btn {
   position: fixed;
@@ -12,58 +50,19 @@
   font-size: 18px;
 }
 
-
-.topic-card-bg-custom:hover {
-  transform: scale(1.05); /* Scale up to 105% of original size */
-}
-
-  @media (min-width: 768px) {
-    .floating-btn {
-      display: none; /* Hide floating button on larger screens */
-    }
+@media (min-width: 768px) {
+  .floating-btn {
+    display: none; /* Hide floating button on larger screens */
   }
+}
 
-
-/* Card Styling for Dark Theme */
-[data-bs-theme="dark"] .topic-card-bg-custom {
-  background-color: #283447 !important;
+/* Link and Button Styles */
+.content-link:hover {
   color: #fff;
-  transition: background-color 0.3s ease;
+  background-color: #5738dfc9;
 }
 
-[data-bs-theme="dark"] .topic-card-bg-custom:hover {
-  background-color: #3d5b81b0 !important; /* Slightly lighter on hover */
+.content-link.active {
+  color: #fff;
+  background-color: #5738dfc9;
 }
-
-/* topic-card Styling for Light Theme */
-[data-bs-theme="light"] .topic-card-bg-custom {
-  background-color: #fefefe !important; /* Light background */
-  color: #0f0f0f; /* Dark text for readability */
-  transition: background-color 0.3s ease;
-}
-
-[data-bs-theme="light"] .topic-card-bg-custom:hover {
-  background-color: #e1e1e1 !important; /* Light hover effect */
-  color: #5738dfc9; /* Change text color on hover for contrast */
-}
-
-
-
-/* Optional: Improve text visibility for light theme */
-[data-bs-theme="light"] .topic-card-bg-custom h5,
-[data-bs-theme="light"] .topic-card-bg-custom p {
-  color: #0f0f0f; /* Ensure text is dark for readability */
-}
-
-/* Optional: Links and buttons inside cards */
-[data-bs-theme="light"] .topic-card-bg-custom a,
-[data-bs-theme="light"] .topic-card-bg-custom button {
-  color: #5738dfc9; /* Consistent link color */
-}
-
-[data-bs-theme="light"] .topic-card-bg-custom a:hover,
-[data-bs-theme="light"] .topic-card-bg-custom button:hover {
-  color: #fff; /* Change link/button text to white on hover for visibility */
-}
-
-  

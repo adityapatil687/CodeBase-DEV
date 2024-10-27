@@ -4,10 +4,9 @@ function Section1() {
     <>
       <div className="row py-3">
         <div className="col-12 col-sm-6 my-auto text-center text-sm-start">
-          <div className="h1 fw-bold display-4 mb-4">
+          <div className="h1 text-xs-center text-sm-start fw-bold display-4 mb-4">
             {/* Increased the size for larger screens */}
             Learn Trending Technologies
-            <br />
             for Free
           </div>
           <p className="fs-5 mt-4 text-body-secondary pe-0 pe-sm-4">
