@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom"; // For navigation links
-import "./styles/TopicDetail.css"; // Custom styles
+import "./styles/TopicDetail.css";
 
 function TopicDetail() {
   const [isOffCanvasOpen, setOffCanvasOpen] = useState(false);
