@@ -16,39 +16,39 @@ function Section2() {
           <div className="row g-3 px-3 px-sm-0">
             {/* Card 1 */}
             <div className="col-12 col-md-4">
-              <Section2Card title={"Card 1"} icon={"bi-moon"} />
+              <Section2Card title={"Card 1"} icon={"bi-moon"} to={"topics/topic1"}/>
             </div>
             {/* Card 2 */}
             <div className="col-12 col-md-4">
-              <Section2Card title={"Card 2"} icon={"bi-moon"} />
+              <Section2Card title={"Card 2"} icon={"bi-moon"} to={"topics/topic2"} />
             </div>
             {/* Card 3 */}
             <div className="col-12 col-md-4">
-              <Section2Card title={"Card 3"} icon={"bi-moon"} />
+              <Section2Card title={"Card 3"} icon={"bi-moon"} to={"topics/topic3"} />
             </div>
             {/* Card 4 */}
             <div className="col-6 col-md-4 d-none d-md-block">
-              <Section2Card title={"Card 4"} icon={"bi-moon"} />
+              <Section2Card title={"Card 4"} icon={"bi-moon"}  to={"topics/topic4"}/>
             </div>
             {/* Card 5 */}
             <div className="col-6 col-md-4 d-none d-md-block">
-              <Section2Card title={"Card 5"} icon={"bi-moon"} />
+              <Section2Card title={"Card 5"} icon={"bi-moon"}  to={"topics/topic5"}/>
             </div>
             {/* Card 6 */}
             <div className="col-6 col-md-4 d-none d-md-block">
-              <Section2Card title={"Card 6"} icon={"bi-moon"} />
+              <Section2Card title={"Card 6"} icon={"bi-moon"}  to={"topics/topic5"}/>
             </div>
             {/* Card 7 */}
             <div className="col-6 col-md-4 d-none d-md-block">
-              <Section2Card title={"Card 7"} icon={"bi-moon"} />
+              <Section2Card title={"Card 7"} icon={"bi-moon"}  to={"topics/topic6"}/>
             </div>
             {/* Card 8 */}
             <div className="col-6 col-md-4 d-none d-md-block">
-              <Section2Card title={"Card 8"} icon={"bi-moon"} />
+              <Section2Card title={"Card 8"} icon={"bi-moon"}  to={"topics/topic7"}/>
             </div>
             {/* Card 9 */}
             <div className="col-12 col-md-4">
-              <Section2Card title={"View all topics"} icon={"bi-moon"} />
+              <Section2Card title={"View all topics"} icon={"bi-moon"}  to={"topics/"}/>
             </div>
           </div>
         </div>
