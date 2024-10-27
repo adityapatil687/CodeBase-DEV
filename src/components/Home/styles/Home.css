@@ -7,13 +7,23 @@
   height: 100vh; /* Full viewport height */
 }
 
-/* Card */
+.card-bg-custom {
+  height: 65px;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Zoom effect on hover */
+.card-bg-custom:hover {
+  transform: scale(1.05); /* Scale up to 105% of original size */
+}
+
+/* Card Icon Style */
 .card-icon-style {
   background-color: #7b61ff; /* Python color */
-  width: 50px;
-  height: 50px;
-  min-width: 50px;
-  min-height: 50px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   border-radius: 50%; /* Makes it a circle */
   display: flex;
   justify-content: center;
@@ -35,7 +45,6 @@
 [data-bs-theme="light"] .card-bg-custom {
   background-color: #fefefe !important; /* Light background */
   color: #0f0f0f; /* Dark text for readability */
-
   transition: background-color 0.3s ease;
 }
 

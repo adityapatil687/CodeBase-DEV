@@ -5,7 +5,6 @@ function Section1() {
       <div className="row py-3">
         <div className="col-12 col-sm-6 my-auto text-center text-sm-start">
           <div className="h1 fw-bold display-4 mb-4">
-            {" "}
             {/* Increased the size for larger screens */}
             Learn Trending Technologies
             <br />
