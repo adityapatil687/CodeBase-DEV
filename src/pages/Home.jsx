@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import "../components/Home/styles/Home.css";
+import "./styles/Home.css";
 import Section1 from "../components/Home/Section1";
 import Section2 from "../components/Home/Section2";
 import Section3 from "../components/Home/Section3";

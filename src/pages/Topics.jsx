@@ -48,12 +48,7 @@ function Topics() {
     <>
       <div className="container py-3">
         <div className="text-center">
-          {/* <h1>Level Up Your Coding Skills</h1>
-          <p>
-            Whether you want to excel in web development, mobile development or
-            strengthen your fundamental software engineering skills, there is a
-            course for you.
-          </p> */}
+          
         </div>
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h1>Topics</h1>
@@ -85,11 +80,11 @@ function Topics() {
 
         <div className="row g-4">
           {filteredLanguages.map((lang, index) => (
-            <div className="col-md-3" key={index}>
-              <div className="card">
+            <div className="col-md-3 " key={index}>
+              <div className="card topic-card-bg-custom ">
                 <Link
                   to={`/topics/${lang.name.toLowerCase()}`}
-                  className="text-decoration-none text-light"
+                  className="text-decoration-none link-light"
                 >
                   <img
                     src={lang.image}
