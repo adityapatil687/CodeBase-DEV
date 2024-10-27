@@ -158,23 +158,23 @@ function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle }) {
                 className="nav-link nav-link-custom text-light rounded"
                 to="/topics"
               >
-                <span className="ms-3">Topics</span>
+                <span className="ms-1">Topics</span>
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item  mt-2">
               <NavLink
                 className="nav-link nav-link-custom text-light rounded"
                 to="/docs"
               >
-                <span className="ms-3">Docs</span>
+                <span className="ms-1">Docs</span>
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item  mt-2">
               <NavLink
                 className="nav-link nav-link-custom text-light rounded"
                 to="/about"
               >
-                <span className="ms-3">About</span>
+                <span className="ms-1">About</span>
               </NavLink>
             </li>
           </ul>

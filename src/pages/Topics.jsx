@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./styles/topics.css";
 import { Link } from "react-router-dom";
 function Topics() {
   const topicsList = [

@@ -10,7 +10,7 @@
   color: #fff;
 }
 
-a.nav-link-custom {
+.nav-link-custom {
   line-height: 20px;
   font-size: medium;
   font-weight: 600;
@@ -19,10 +19,10 @@ a.nav-link-custom {
   transition: background-color 0.2s ease-in-out; /* Smooth transition */
 }
 
-a.nav-link-custom:hover,
-a.nav-link-custom.active,
-a.nav-link-custom:focus,
-a.nav-link-custom:active {
+.nav-link-custom:hover,
+.nav-link-custom.active,
+.nav-link-custom:focus,
+.nav-link-custom:active {
   background-color: #5738dfc9; /* Set background color on hover and active */
   color: white !important; /* Ensure text color stays white */
 }
