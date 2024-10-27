@@ -43,11 +43,13 @@
 
 /* Floating Button Styling */
 .floating-btn {
+  height: 50px;
+  width: 50px;
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1050;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 @media (min-width: 768px) {
