@@ -80,7 +80,7 @@ function Topics() {
 
         <div className="row g-4">
           {filteredLanguages.map((lang, index) => (
-            <div className="col-3" key={index}>
+            <div className="col-6 col-sm-4" key={index}>
               <div className="topic-card-bg-custom card rounded">
                 <Link
                   to={`/topics/${lang.name.toLowerCase()}`}

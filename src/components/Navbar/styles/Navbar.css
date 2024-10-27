@@ -4,10 +4,24 @@
   overflow: hidden;
 }
 
-.navbar,
-.offcanvas {
+.navbar {
   background-color: #1f2836 !important; /* Force Bootstrap color */
   color: #fff;
+}
+
+.offcanvas {
+  background-color: #19202b !important; /* Force Bootstrap color */
+  color: #fff;
+}
+
+[data-bs-theme="light"] .offcanvas {
+  background-color: #fefefe !important; /* Light background for offcanvas */
+  color: #212529; /* Dark text color */
+}
+
+[data-bs-theme="dark"] .offcanvas {
+  background-color: #19202b !important; /* Light background for offcanvas */
+  color: #fff; /* Dark text color */
 }
 
 .nav-link-custom {

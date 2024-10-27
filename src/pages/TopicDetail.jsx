@@ -1,62 +1,39 @@
 import React, { useState } from "react";
 import "./styles/TopicDetail.css";
 import { Link } from "react-router-dom";
-
-const chapters = [
-  {
-    title: "Python Introduction",
-    topics: [
-      { title: "Get Started with Python", link: "" },
-      { title: "Your First Python Program", link: "" },
-      { title: "Python Comments", link: "" },
-    ],
-  },
-  {
-    title: "Python Fundamentals",
-    topics: [
-      { title: "Python Variables and Literals", link: "" },
-      { title: "Python Type Conversion", link: "" },
-      { title: "Python Basic Input and Output", link: "" },
-      { title: "Python Operators", link: "" },
-    ],
-  },
-];
+import topics from "../data/topics"; // Import topics data
 
 function TopicDetail() {
+  const pythonChapters = topics.python.chapters; // Access Python chapters
+
+  const [activeTopic, setActiveTopic] = useState(pythonChapters[0].topics[0].title); // Default to the first topic
   const [isOffCanvasOpen, setOffCanvasOpen] = useState(false);
+
   const toggleOffCanvas = () => setOffCanvasOpen(!isOffCanvasOpen);
+  const topicClickHandler = (topic) => setActiveTopic(topic.title);
 
   return (
     <div className="container-fluid">
       <div className="row">
         {/* Sidebar (visible on medium and larger screens) */}
         <div className="sideContent col-md-3 col-lg-3 border-end d-none d-md-block p-0">
-          {/* Accordion for Topic Chapters */}
-          <TopicContents />
+          <TopicContents
+            chapters={pythonChapters}
+            activeTopic={activeTopic}
+            onTopicClick={topicClickHandler}
+          />
         </div>
 
-        {/* Off-canvas Sidebar for Small Screens */}
         <OffcanvasSidebar
           showOffcanvas={isOffCanvasOpen}
           handleOffcanvasToggle={toggleOffCanvas}
+          chapters={pythonChapters}
+          activeTopic={activeTopic}
+          onTopicClick={topicClickHandler}
         />
 
-        {/* Main Content */}
-        <main className="col-md-9 col-lg-9 p-0 m-0 px-4 py-2">
-          <div className="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
-            <h1 className="h2">Getting Started with Python</h1>
-          </div>
-          <p>
-            Python is a versatile, high-level programming language that is
-            widely supported across all major operating systems.
-          </p>
-          <h2>Run Python Online</h2>
-          <p>
-            To execute Python code, you need to have a Python interpreter
-            installed on your system. However, if you want to start immediately,
-            you can use our free online Python editor.
-          </p>
-        </main>
+        {/* Main Content - Conditionally Rendered */}
+        <MainContent activeTopic={activeTopic} chapters={pythonChapters} />
 
         {/* Floating Button to Toggle Off-canvas Sidebar */}
         <button
@@ -70,7 +47,7 @@ function TopicDetail() {
   );
 }
 
-function TopicContents() {
+function TopicContents({ chapters, activeTopic, onTopicClick }) {
   return (
     <div className="accordion accordion-flush" id="accordionExample">
       {chapters.map((chapter, index) => (
@@ -96,8 +73,11 @@ function TopicContents() {
               {chapter.topics.map((topic, topicIndex) => (
                 <Link
                   key={topicIndex}
-                  to={topic.link}
-                  className="content-link nav-link ps-3 p-2 rounded my-2"
+                  to=""
+                  onClick={() => onTopicClick(topic)}
+                  className={`content-link nav-link ps-3 p-2 rounded my-2 ${
+                    activeTopic === topic.title ? "active" : ""
+                  }`}
                 >
                   {topic.title}
                 </Link>
@@ -110,7 +90,7 @@ function TopicContents() {
   );
 }
 
-function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle }) {
+function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle, chapters, activeTopic, onTopicClick }) {
   return (
     <div
       className={`offcanvas offcanvas-start ${showOffcanvas ? "show" : ""}`}
@@ -122,14 +102,33 @@ function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle }) {
         <h3>Contents</h3>
         <button
           type="button"
-          className="btn-close text-reset btn-close-white"
+          className="btn-close text-reset"
           onClick={handleOffcanvasToggle}
         ></button>
       </div>
-      <div className="offcanvas-body p-0 m-0">
-        <TopicContents />
-      </div>
+      <TopicContents
+        chapters={chapters}
+        activeTopic={activeTopic}
+        onTopicClick={onTopicClick}
+      />
     </div>
+  );
+}
+
+function MainContent({ activeTopic, chapters }) {
+  const topicContent = chapters
+    .flatMap((chapter) => chapter.topics)
+    .find((topic) => topic.title === activeTopic)?.content;
+
+  return (
+    <main className="col-md-9 col-lg-9 p-0 m-0 px-4 py-2">
+      <div className="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
+        <h1 className="h2">{activeTopic}</h1>
+      </div>
+      <div>
+        <p>{topicContent}</p>
+      </div>
+    </main>
   );
 }
 

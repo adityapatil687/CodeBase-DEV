@@ -60,15 +60,20 @@ function OffcanvasButton({ handleOffcanvasToggle }) {
 function NavbarBrand() {
   return (
     <>
-      <NavLink to="/" className="navbar-brand text-light mt-1 me-auto ms-2">
-        <img
-          src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
-          alt="Bootstrap"
-          className="me-2"
-          width={40}
-        />
-        <span>CodeBase</span>
-        <span className="rounded px-1 custom-title-border">DEV</span>
+      <NavLink to="/" className="navbar-brand text-light me-auto ms-2">
+        <div className="d-flex">
+            <img
+              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+              alt="Bootstrap"
+              className="me-2"
+              width={40}
+            />
+          
+          <div>
+            <span>CodeBase</span>
+            <span className="rounded px-1 custom-title-border">DEV</span>
+          </div>
+        </div>
       </NavLink>
     </>
   );
@@ -133,14 +138,18 @@ function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle }) {
       >
         <div className="offcanvas-header">
           <div className="d-flex align-items-center">
-            <NavLink to="/" className="navbar-brand">
+            <NavLink to="/" className="navbar-brand" onClick={handleOffcanvasToggle}>
               <img
                 src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
                 alt="Bootstrap"
                 width={40}
               />
             </NavLink>
-            <NavLink to="/" className="navbar-brand text-light mt-2 ms-2 h4">
+            <NavLink
+              to="/"
+              className="navbar-brand text-light mt-2 ms-2 h4"
+              onClick={handleOffcanvasToggle}
+            >
               CodeBase
               <span className="rounded px-1 custom-title-border">DEV</span>
             </NavLink>
@@ -157,22 +166,25 @@ function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle }) {
               <NavLink
                 className="nav-link nav-link-custom text-light rounded"
                 to="/topics"
+                onClick={handleOffcanvasToggle}
               >
                 <span className="ms-1">Topics</span>
               </NavLink>
             </li>
-            <li className="nav-item  mt-2">
+            <li className="nav-item mt-2">
               <NavLink
                 className="nav-link nav-link-custom text-light rounded"
                 to="/docs"
+                onClick={handleOffcanvasToggle}
               >
                 <span className="ms-1">Docs</span>
               </NavLink>
             </li>
-            <li className="nav-item  mt-2">
+            <li className="nav-item mt-2">
               <NavLink
                 className="nav-link nav-link-custom text-light rounded"
                 to="/about"
+                onClick={handleOffcanvasToggle}
               >
                 <span className="ms-1">About</span>
               </NavLink>
@@ -183,5 +195,6 @@ function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle }) {
     </>
   );
 }
+
 
 export default Navbar;

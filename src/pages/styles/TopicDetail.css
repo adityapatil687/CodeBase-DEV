@@ -3,12 +3,19 @@
   height: 100vh;
 }
 
-[data-bs-theme="dark"].accordion-body{
-  background-color: #19202b;
+
+/* Accordion Background Styles */
+[data-bs-theme="dark"] .accordion,
+[data-bs-theme="light"] .accordion {
+  border: none; /* Remove border */
 }
 
-[data-bs-theme="light"].accordion-body{
-  background-color: #FEFFFE;
+[data-bs-theme="dark"] .accordion-body {
+  background-color: #19202b !important; /* Dark background for accordion body */
+}
+
+[data-bs-theme="light"] .accordion-body {
+  background-color: #FEFFFE !important; /* Light background for accordion body */
 }
 
 /* Optional: Remove the shadow effect on focus */
@@ -19,24 +26,24 @@
 
 /* Light Theme Styles */
 [data-bs-theme="light"] .accordion-button {
-  background-color: #FEFFFE; /* Light background */
+  background-color: #FEFFFE !important; /* Light background */
   color: #212529; /* Dark text */
 }
 
 [data-bs-theme="light"] .accordion-button:not(.collapsed) {
-  background-color: #FEFFFE; /* Light gray when expanded */
+  background-color: #FEFFFE !important; /* Light gray when expanded */
   color: #212529; /* Dark text */
   border-color: #dee2e6; /* Light border */
 }
 
 /* Dark Theme Styles */
 [data-bs-theme="dark"] .accordion-button {
-  background-color: #19202b; /* Dark background */
+  background-color: #19202b !important; /* Dark background */
   color: #fff; /* White text */
 }
 
 [data-bs-theme="dark"] .accordion-button:not(.collapsed) {
-  background-color: #19202b; /* Same dark background */
+  background-color: #19202b !important; /* Same dark background */
   color: #fff; /* Ensure text color remains consistent */
   border-color: rgb(36, 36, 36); /* Dark border */
 }
@@ -54,7 +61,7 @@
 
 @media (min-width: 768px) {
   .floating-btn {
-    display: none; /* Hide floating button on larger screens */
+      display: none; /* Hide floating button on larger screens */
   }
 }
 
