@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   position: sticky;
   top: 0;
   overflow: hidden;
@@ -14,19 +14,27 @@ a.nav-link-custom {
   line-height: 20px;
   font-size: medium;
   font-weight: 600;
-}
-a.nav-link-custom:hover {
-  background-color: #5738dfc9; /* Background color on hover */
-  transition: background-color 0.1s ease-in;
+  border-radius: 5px; /* Add slight rounding for consistency */
+  padding: 0.5rem 1rem; /* Add padding for better spacing */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition */
 }
 
+a.nav-link-custom:hover,
+a.nav-link-custom.active,
+a.nav-link-custom:focus,
+a.nav-link-custom:active {
+  background-color: #5738dfc9; /* Set background color on hover and active */
+  color: white !important; /* Ensure text color stays white */
+}
+
+/* Button styling */
 .btn {
-  width: 40px; /* Set the width */
-  height: 40px; /* Set the height */
-  display: flex; /* Use flex to center the icon */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
   border: none;
   background-color: #363f4d;
 }
@@ -36,27 +44,27 @@ a.nav-link-custom:hover {
 }
 
 .btn i {
-  color: white; /* Icon color */
-  transition: color 0.3s ease; /* Smooth transition for icon color */
+  color: white;
+  transition: color 0.3s ease;
 }
 
 .btn:hover i {
-  color: white; /* Change icon color on hover */
+  color: white;
 }
 
+/* Offcanvas transitions */
 .offcanvas {
-  transition: transform 0.5s ease; /* Smooth transition for entering/exiting */
-  transform: translateX(-100%); /* Start off-screen */
-  max-width: 80vw; /* Limit max width to 80% of the viewport width */
-  padding: 1rem; /* Add padding */
+  transition: transform 0.5s ease;
+  transform: translateX(-100%);
+  max-width: 80vw;
+  padding: 1rem;
 }
 
 .offcanvas.show {
-  transform: translateX(0); /* Slide in */
-  transition: transform 0.5s ease;
+  transform: translateX(0);
 }
 
 .custom-title-border:hover {
   border-right: 2px solid #5738dfc9 !important;
-  border-bottom: 2px solid #5738dfc9 !important; /* Force border style */
+  border-bottom: 2px solid #5738dfc9 !important;
 }

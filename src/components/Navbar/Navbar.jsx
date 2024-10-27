@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./styles/Navbar.css";
 
 function Navbar() {
@@ -60,16 +60,16 @@ function OffcanvasButton({ handleOffcanvasToggle }) {
 function NavbarBrand() {
   return (
     <>
-      <Link to="/" className="navbar-brand text-light mt-1 me-auto ms-2">
+      <NavLink to="/" className="navbar-brand text-light mt-1 me-auto ms-2">
         <img
           src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
           alt="Bootstrap"
           className="me-2"
           width={40}
         />
-        CodeBase
+        <span>CodeBase</span>
         <span className="rounded px-1 custom-title-border">DEV</span>
-      </Link>
+      </NavLink>
     </>
   );
 }
@@ -77,33 +77,33 @@ function NavbarLinks() {
   return (
     <>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0 py-1">
+        <ul className="navbar-nav ms-2 me-auto mb-2 mb-lg-0 py-1">
           <li className="nav-item mx-2">
-            <Link
-              className="nav-link active text-light nav-link-custom rounded"
+            <NavLink
+              className="nav-link text-light nav-link-custom rounded"
               aria-current="page"
               to="/topics"
             >
               Topics
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item mx-2">
-            <Link
-              className="nav-link active text-light nav-link-custom rounded"
+            <NavLink
+              className="nav-link text-light nav-link-custom rounded"
               aria-current="page"
               to="/docs"
             >
               Docs
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item mx-2">
-            <Link
-              className="nav-link active text-light nav-link-custom rounded"
+            <NavLink
+              className="nav-link text-light nav-link-custom rounded"
               aria-current="page"
               to="/about"
             >
               About
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -133,17 +133,17 @@ function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle }) {
       >
         <div className="offcanvas-header">
           <div className="d-flex align-items-center">
-            <Link to="/" className="navbar-brand">
+            <NavLink to="/" className="navbar-brand">
               <img
                 src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
                 alt="Bootstrap"
                 width={40}
               />
-            </Link>
-            <Link to="/" className="navbar-brand text-light mt-2 ms-2 h4">
+            </NavLink>
+            <NavLink to="/" className="navbar-brand text-light mt-2 ms-2 h4">
               CodeBase
               <span className="rounded px-1 custom-title-border">DEV</span>
-            </Link>
+            </NavLink>
           </div>
           <button
             type="button"
@@ -154,28 +154,28 @@ function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle }) {
         <div className="offcanvas-body">
           <ul className="navbar-nav flex-column">
             <li className="nav-item">
-              <Link
+              <NavLink
                 className="nav-link nav-link-custom text-light rounded"
                 to="/topics"
               >
                 <span className="ms-3">Topics</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 className="nav-link nav-link-custom text-light rounded"
                 to="/docs"
               >
                 <span className="ms-3">Docs</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 className="nav-link nav-link-custom text-light rounded"
                 to="/about"
               >
                 <span className="ms-3">About</span>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
