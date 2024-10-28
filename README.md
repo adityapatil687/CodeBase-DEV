@@ -14,6 +14,18 @@ Our free and open-source learning platform empowers learners to explore and mast
 - **Navbar Background**: `background-color: #1f2836`
 
 
+## Getting Started 🚀
+
+- **Clone the repository**:
+  ```bash
+  git clone https://github.com/adityapatil687/CodeBase-DEV.git
+- **Install Dependencies**:
+  ```bash
+  npm i
+- **Run Project**
+  ```bash
+  npm run dev
+  
 ## To-Do List 📝
 - [ ] Design About page user interface.
 - [ ] Design and add Footer to div having id="footer".
