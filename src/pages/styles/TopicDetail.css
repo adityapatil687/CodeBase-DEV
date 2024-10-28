@@ -1,9 +1,3 @@
-/* Side Content Styles */
-.sideContent {
-  height: 100vh;
-}
-
-
 /* Accordion Background Styles */
 [data-bs-theme="dark"] .accordion,
 [data-bs-theme="light"] .accordion {

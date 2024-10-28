@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./styles/Topics.css"
+import "./styles/Topics.css";
 function Topics() {
   const topicsList = [
     {
-      name: "JavaScript",
+      name: "Python",
       image:
         "https://codewithmosh.com/_next/image?url=https%3A%2F%2Fwww.filepicker.io%2Fapi%2Ffile%2FBFMMlbcQvml9HSqXcvNp&w=384&q=75",
       category: "Programming Language",
       description:
-        "JavaScript is a versatile programming language commonly used in web development to create dynamic and interactive user interfaces.",
+        "Python is a general purpose programming language. Primilarly used used in the field of data science, artificial intelligence, machine learning nad natural language processing",
     },
     // You can add more categories and languages as needed
   ];
@@ -80,7 +80,7 @@ function Topics() {
 
         <div className="row g-4">
           {filteredLanguages.map((lang, index) => (
-            <div className="col-6 col-sm-4" key={index}>
+            <div className="col-12 col-sm-6 col-md-4" key={index}>
               <div className="topic-card-bg-custom card rounded">
                 <Link
                   to={`/topics/${lang.name.toLowerCase()}`}
@@ -90,7 +90,6 @@ function Topics() {
                     src={lang.image}
                     className="card-img-top"
                     alt={lang.name}
-                    
                   />
                   <div className="card-body">
                     <h5 className="card-title">{lang.name}</h5>
