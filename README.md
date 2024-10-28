@@ -31,7 +31,7 @@ Our free and open-source learning platform empowers learners to explore and mast
 - [ ] Design and add Footer to div having id="footer".
 - [ ] Replace Docs tab with Blogs and design user interface.
 - [ ] Add animation for better user experiance.
-- [ ] Suggest new color pallete.
+- [ ] Suggest new color palette.
 - [ ] Design code section and styles to include program in webpage.
 #
 - [ ] Create additional topics for beginner and advanced learners.
