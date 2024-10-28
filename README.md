@@ -32,6 +32,7 @@ Our free and open-source learning platform empowers learners to explore and mast
 - [ ] Replace Docs tab with Blogs and design user interface.
 - [ ] Add animation for better user experiance.
 - [ ] Suggest new color pallete.
+- [ ] Design code section and styles to include program in webpage.
 #
 - [ ] Create additional topics for beginner and advanced learners.
 - [ ] Update existing content with the latest information and examples.
