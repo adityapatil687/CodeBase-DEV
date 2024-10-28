@@ -42,7 +42,7 @@ A pre-made component, `PythonTopic.jsx`, is provided as a template to display co
 **Note**: Familiarity with HTML, JavaScript, and Bootstrap is required to edit the template. The rest of the UI will be managed by our team. 🎨
 
 ### Step 3: Submit Your Changes ✔️
-After adding your topic and successfully testing it, please open a pull request to contribute your work. 📝
+After adding your topic and successfully testing it, please open a pull request on the **dev** branch to contribute your work. 📝
 
 ## Contribution 🤗
 We welcome contributions from everyone! Whether you're a seasoned developer or just starting, your input helps enhance the learning experience for all users. 🌟
