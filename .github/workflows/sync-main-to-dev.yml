@@ -3,15 +3,17 @@ name: Sync main to dev
 on:
   push:
     branches:
-      - main
+      - main  # This workflow triggers on pushes to the main branch
 
 jobs:
   sync-main-to-dev:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Specify the environment for the job
 
     steps:
       - name: Check out the repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Fetch all history for all branches
 
       - name: Set up Git
         run: |
@@ -19,14 +21,14 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Fetch all branches
-        run: git fetch --all
+        run: git fetch --all  # Ensure all branches are available
 
       - name: Merge main into dev
         run: |
-          git checkout dev
-          git merge origin/main --no-edit
+          git checkout dev  # Switch to the dev branch
+          git merge origin/main --no-edit  # Merge changes from main into dev
 
       - name: Push changes to dev
-        run: git push origin dev
+        run: git push origin dev  # Push the updated dev branch
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub token for authentication
