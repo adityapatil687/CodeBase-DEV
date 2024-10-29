@@ -25,20 +25,6 @@ Our free and open-source learning platform empowers learners to explore and mast
 - **Run Project**
   ```bash
   npm run dev
-  
-## To-Do List 📝
-- [ ] Design About page user interface.
-- [ ] Design and add Footer to div having id="footer".
-- [ ] Replace Docs tab with Blogs and design user interface.
-- [ ] Add animation for better user experiance.
-- [ ] Suggest new color palette.
-- [ ] Design code section and styles to include program in webpage.
-#
-- [ ] Create additional topics for beginner and advanced learners.
-- [ ] Update existing content with the latest information and examples.
-- [ ] Improve the user interface based on user feedback.
-- [ ] Implement new features suggested by the community.
-- [ ] Organize a community event to gather contributions and feedback.
 
 ## Guideline for Publishing a Topic
 
