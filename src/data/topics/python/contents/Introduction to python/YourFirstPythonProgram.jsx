@@ -3,7 +3,7 @@ import CodeSection from "../../../../../components/TopicDetail/CodeSection";
 export default function YourFirstPythonProgram() {
   return (
     <>
-      <main className="p-4">
+      <main className="p-3">
           <h1>Your First Python Program</h1>
           <p>
             In the previous tutorial, you learned how to install Python on your

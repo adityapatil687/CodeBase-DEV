@@ -5,7 +5,7 @@ import get_started_img from "../../assets/python-getting-started.png";
 export default function GetStartedWithPython() {
   return (
     <>
-      <main className="p-4">
+      <main className="p-2">
         <h1>Get Started with Python</h1>
         <br />
         <p>
