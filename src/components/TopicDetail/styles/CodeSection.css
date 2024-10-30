@@ -1,0 +1,31 @@
+.code-section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #242424; /* Light gray background */
+    min-height: 150px; /* Minimum height */
+    overflow: auto; /* Allows scrolling if content is too long */
+    position: relative;
+  }
+  
+  .code-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .tag {
+    background-color: #007bff; /* Blue background for tags */
+    color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .code {
+    font-family: "Courier New", Courier, monospace; /* Monospace font for code */
+    white-space: pre-wrap; /* Preserve whitespace for formatting */
+    overflow-wrap: break-word; /* Break long lines */
+  }
+  

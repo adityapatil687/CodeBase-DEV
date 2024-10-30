@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import "./styles/TopicDetail.css";
 
 // Add topics herea
-import PythonTopic from "../data/PythonTopic";
+import PythonTopic from "../data/topics/python/PythonTopic";
 
 function TopicDetail() {
   const { topicName } = useParams(); // Extract 'topicName' from the URL
