@@ -26,7 +26,7 @@ function TopicContents({ chapters, activeTopic, onTopicClick }) {
               {chapter.topics.map((topic, topicIndex) => (
                 <Link
                   key={topicIndex}
-                  to={""}  // Update to use the link from topic
+                  to={topic.link}  // Update to use the link from topic
                   onClick={() => onTopicClick(topic)}
                   className={`content-link nav-link ps-3 p-2 rounded my-2 ${
                     activeTopic === topic.title ? "active" : ""
