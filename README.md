@@ -26,22 +26,7 @@ Our free and open-source learning platform empowers learners to explore and mast
   ```bash
   npm run dev
 
-## Guideline for Publishing a Topic
 
-### Step 1: Navigate to the Data Folder 📁
-This folder contains all the data related to topics and their contents. Inside this folder, you will find three subfolders:
-
-1. **assets**: Store images related to the topic or its content here. 🖼️
-2. **contents**: This folder contains a JavaScript file that must follow the naming convention `<topic_name>topic.js`. 📄
-3. **topics**: Here, you will find a JavaScript file that includes information about all available topics on the site. 📚
-
-### Step 2: Use the Template for New Topics 🛠️
-A pre-made component, `PythonTopic.jsx`, is provided as a template to display content. This file depends on the `<topic_name>topic.js` file located in `./contents/<topic>topic`. You can add new topics and explanations using this template. 
-
-**Note**: Familiarity with HTML, JavaScript, and Bootstrap is required to edit the template. The rest of the UI will be managed by our team. 🎨
-
-### Step 3: Submit Your Changes ✔️
-After adding your topic and successfully testing it, please open a pull request on the **dev** branch to contribute your work. 📝
 
 ## Contribution 🤗
 We welcome contributions from everyone! Whether you're a seasoned developer or just starting, your input helps enhance the learning experience for all users. 🌟
