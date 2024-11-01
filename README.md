@@ -26,6 +26,26 @@ Our free and open-source learning platform empowers learners to explore and mast
   ```bash
   npm run dev
 
+## 🚀 Publishing a New Topic
+
+Follow these steps to publish a new topic:
+
+1. **Create Your Topic Folder:**
+   - Navigate to `src/data/topics/`.
+   - Copy the `python` folder (template) and rename it to your topic name.
+
+2. **Update Content Files:**
+   - Inside your new topic folder:
+     - Edit `TopicData.js` to include details like chapters, topics, and links for your topic.
+     - In the main `.jsx` file (e.g., `[YourTopicName]Topics.jsx`), import and organize each topic component.
+
+3. **Organize Chapters:**
+   - Use the `contents` folder to create a new folder for each chapter, named by chapter title.
+   - Place chapter-specific content (component) inside these folders.
+
+4. **Commit and Document:**
+   - Add a `README.md` (like this one!) to your topic folder to explain its structure and contents.
+   - Commit your changes and push to the repository.
 
 
 ## Contribution 🤗
