@@ -156,7 +156,7 @@ function OffcanvasSidebar({ showOffcanvas, handleOffcanvasToggle }) {
           </div>
           <button
             type="button"
-            className="btn-close text-reset btn-close-white"
+            className="btn-close text-reset"
             onClick={handleOffcanvasToggle}
           ></button>
         </div>

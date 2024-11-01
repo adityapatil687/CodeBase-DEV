@@ -24,13 +24,24 @@
   color: #fff; /* Dark text color */
 }
 
-.nav-link-custom {
+[data-bs-theme="light"] .nav-link-custom {
   line-height: 20px;
   font-size: medium;
   font-weight: 600;
   border-radius: 5px; /* Add slight rounding for consistency */
   padding: 0.5rem 1rem; /* Add padding for better spacing */
   transition: background-color 0.2s ease-in-out; /* Smooth transition */
+  color: #212529 !important;
+}
+
+[data-bs-theme="dark"] .nav-link-custom {
+  line-height: 20px;
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 5px; /* Add slight rounding for consistency */
+  padding: 0.5rem 1rem; /* Add padding for better spacing */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition */
+  color: #fff !important;
 }
 
 .nav-link-custom:hover,
@@ -54,7 +65,7 @@
 }
 
 .btn:hover {
-  background-color: #5738dfc9; /* Purple background on hover */
+  background-color: #5738df; /* Purple background on hover */
 }
 
 .btn i {
